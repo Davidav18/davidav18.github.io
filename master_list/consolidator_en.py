@@ -64,12 +64,7 @@ try:
     vertexai.init(project=PROJECT_ID, location=LOCATION)
     model = GenerativeModel("gemini-2.5-pro")
     print("✅ Connected to Google Gemini (Vertex AI) API successfully.")
-
-    # "Hello World" TEST here:
-    print("Testing Gemini connectivity...")
-    response = model.generate_content("What is the capital of France?")
-    print("Test response:", response)
-
+    
 except Exception as e:
     print(f"❌ ERROR: Could not initialize Vertex AI. Details: {e}")
     exit()
