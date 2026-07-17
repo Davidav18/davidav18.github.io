@@ -71,13 +71,6 @@ try:
     model = GenerativeModel("gemini-2.5-pro")
     print("✅ Conectado a la API de Google Gemini (Vertex AI) exitosamente.")
 
-
-    # PRUEBA "Hello World" aquí:
-    print("Realizando prueba de conectividad Gemini...")
-    response = model.generate_content("¿Cuál es la capital de Francia?")
-    print("Respuesta de prueba:", response)
-
-
 except Exception as e:
     print(f"❌ ERROR: No se pudo inicializar Vertex AI. Detalle: {e}")
     exit()
